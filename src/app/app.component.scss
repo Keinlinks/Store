@@ -1,0 +1,9 @@
+.main {
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url("../assets/khBackground.png");
+}
+.min-height {
+  min-height: calc(100vh - 150px);
+}

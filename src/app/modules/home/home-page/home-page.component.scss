@@ -1,0 +1,74 @@
+.section {
+  min-height: calc(100vh - 150px);
+}
+.background-img {
+  background-image: url("../../../../assets/sora.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s ease-out;
+  &:hover {
+    background-image: url("../../../../assets/sora2.png");
+  }
+  &:hover .hidden {
+    opacity: 1;
+    display: block;
+  }
+}
+.animation-image {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: imgAnimation;
+}
+
+.animation-image-reverse {
+  animation-duration: 2s;
+  opacity: 0;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  animation-name: imgAnimationReverse;
+}
+.scale-animation {
+  animation-duration: 1.9s;
+  animation-delay: 1.8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-name: scaleAnimation;
+  &:hover {
+    animation-play-state: paused;
+    scale: 1.02;
+  }
+}
+
+@keyframes imgAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgAnimationReverse {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scaleAnimation {
+  0% {
+    scale: 1;
+    transform: translateY(0);
+  }
+  50% {
+    scale: 1.008;
+    right: 5px;
+    transform: translateY(-5px);
+  }
+}
+.a:hover {
+  text-decoration: underline;
+}

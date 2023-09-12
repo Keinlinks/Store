@@ -1,0 +1,14 @@
+.custom-color-button {
+  background-color: var(--color-background-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.odd-bg div:nth-child(odd) {
+  background-color: ghostwhite;
+  color: black;
+  border-radius: 7px;
+}

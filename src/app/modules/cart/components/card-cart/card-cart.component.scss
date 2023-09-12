@@ -1,0 +1,9 @@
+.text-ellipsis {
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.hover {
+  &:hover .title {
+    text-decoration: underline;
+  }
+}

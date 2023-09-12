@@ -1,0 +1,38 @@
+.container {
+  color: white;
+  display: flex;
+  height: max-content;
+  min-height: 165px;
+}
+
+.logo-container {
+  display: flex;
+  flex-flow: column;
+  width: 150px;
+
+  margin-top: 0.7rem;
+  gap: 2px;
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  div {
+    background-color: white;
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+.custom-height {
+  height: 165px;
+}
+.nav-bar {
+  margin-left: 1rem;
+  a {
+    transition: 0.7s all;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
